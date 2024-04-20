@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./menu.css">
+</head>
+
+<body>
+  <header id="hamburger-menu" hidden>
+    <button class="btn-close">close</button>
+    <h1 id="logo">Logo</h1>
+    <nav id="sidebar-menu">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link" href="#catalog">Catalog</a></li>
+        <li><a class="nav-link" href="#price">Price</a></li>
+        <li><a class="nav-link" href="#product">Product</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <button class="btn-menu">Menu</button>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, veniam laborum? Totam consequatur accusamus autem
+      sapiente distinctio quam impedit perspiciatis ducimus ad quis inventore soluta dicta eos, a cum ratione?</p>
+  </main>
+
+  <script>
+    document.querySelector('.btn-menu').addEventListener('click', () => {
+      document.querySelector('#hamburger-menu').toggleAttribute('hidden');
+    })
+
+    document.querySelector('.btn-close').addEventListener('click', () => {
+      document.querySelector('#hamburger-menu').setAttribute('hidden', true);
+    })
+  </script>
+</body>
+
+</html>

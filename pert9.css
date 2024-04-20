@@ -1,0 +1,161 @@
+* {
+  font-family: "Platypi", serif;
+}
+
+body {
+  margin: 0;
+}
+
+.login-container {
+  display: flex;
+  padding: 0;
+}
+
+/* ============================= GREATER ============================= */
+
+.login-greater {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+.login-greater h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #8a2be2;
+  margin: 0;
+}
+
+.login-greater p {
+  font-weight: lighter;
+}
+
+.greater-img {
+  width: 520px;
+}
+
+/* ============================= LOGIN ============================= */
+
+.login-form {
+  width: 35%;
+  padding: 16px 40px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+.subtitle {
+  color: #666;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.form-input label {
+  margin-bottom: 10px;
+}
+
+.form-input input {
+  padding: 10px 10px;
+}
+
+.forget-btn,
+.register-btn {
+  margin-top: 8px;
+  text-decoration: none;
+  color: #8a2be2;
+}
+
+.register-btn {
+  font-weight: bold;
+}
+
+.register-text {
+  color: #666;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.forget-btn {
+  display: block;
+  float: right;
+}
+
+.btn {
+  width: 100%;
+  height: 44px;
+  border-radius: 25px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.btn-login {
+  color: #f0f8ff;
+  background-color: #8a2be2;
+  border: none;
+}
+
+.btn-signin {
+  background-color: #f0f8ff;
+  border: 1px solid #000;
+}
+
+.icon-signin {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+/* ============================= RESPONSIVE ============================= */
+@media screen and (max-width: 800px) {
+  .login-form {
+    width: 40%;
+  }
+
+  .login-greater {
+    width: 60%;
+  }
+
+  .greater-img {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-form {
+    width: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
+    order: 2;
+  }
+
+  .login-greater {
+    width: 100%;
+    order: 1;
+    padding: 60px 0;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .login-greater h2 {
+    font-size: 32px;
+  }
+
+  .greater-img {
+    width: 260px;
+  }
+}

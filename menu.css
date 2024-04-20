@@ -1,0 +1,48 @@
+#hamburger-menu {
+  /* display: none; */
+  width: 300px;
+  padding: 10px;
+  background-color: #8a2be2;
+  color: #f0f8ff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.nav-list {
+  padding: 0;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f0f8ff;
+  padding: 8px 12px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.btn-menu {
+  padding: 8px 24px;
+  background-color: #8a2be2;
+  color: #f0f8ff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-close {
+  padding: 8px 24px;
+  background-color: #f0f8ff;
+  color: #8a2be2;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
